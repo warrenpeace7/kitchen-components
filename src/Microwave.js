@@ -3,9 +3,9 @@
 import React, { Component } from 'react'
 
 class Microwave extends Component {
-    constructor() {
-        super()
-        console.log('Microwave.constructor()')
+    constructor(props) {
+        super(props)
+        console.log('Microwave.constructor()', props)
       }
     
       componentWillMount() {

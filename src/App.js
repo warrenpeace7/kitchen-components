@@ -3,6 +3,11 @@ import './App.css';
 import Kitchen from './Kitchen'
 
 class App extends Component {
+  state = {
+    kitchenName: "Tyler's Kitchen",
+    kitchenPowerIsOn: true
+
+  }
   constructor() {
     super()
     console.log('App.constructor()')
@@ -20,7 +25,7 @@ class App extends Component {
     console.log('App.render')
     return (
       <div className="App">
-        <Kitchen />
+        <Kitchen name={this.state.kitchenName} powerIsOn={this.state.kitchenPowerIsOn} />
       </div>
     )
   }
